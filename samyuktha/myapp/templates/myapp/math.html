@@ -1,37 +1,3 @@
-# Design a Website for Server Side Processing
-
-## AIM:
-To design a website to perform mathematical calculations in server side.
-
-## DESIGN STEPS:
-
-### Step 1:
-
-Clone the repsitory from github
-
-### Step 2:
-
-Create django admin project
-
-### Step 3:
-
-Create a new app
-
-### Step 4:
-
-Create python program for views and urls.
-
-### Step 5:
-
-Create HTML file for forms.
-
-### Step 6:
-
-Publish the website in the given URL.
-
-## PROGRAM :
-```
-math.html
 <html>
 <head>
 <meta charset='utf-8'>
@@ -95,21 +61,3 @@ Area : <input type="text" name="area" value="{{area}}"></input>m<sup>2</sup><br/
 </div>
 </body>
 </html>
-
-urls.py
-from django.contrib import admin
-from django.urls import path
-from myapp import views
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('areaofrectangle/',views.rectarea,name="areaofrectangle"),
-    path('',views.rectarea,name="areaofrectangleroot")
-]
-```
-## OUTPUT:
-![output](./uyt.png)
-### Home Page:
-![Home Page](./home.png)
-
-## Result:
-The program for implementing server side processing is implemented successfully.
